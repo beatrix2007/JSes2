@@ -3,6 +3,30 @@
         <title>JSes2</title>
     </head>
     <body>
-
-    </body>
+        <body id="body1">
+            <h1>ES 2</h1>
+            <h1 id="h1bella">bella</h1>
+            <p>Pagina html statica, includi un file javascript, aggiungi un bottone, aggiungi un click listener
+             al bottone che cambia il contenuto di un tag span e il contenuto e colore di un div.</p>
+             <span id="span1">C'è un bottone</span>
+             <br><br>
+             
+             <div id="div1" style="background-color: rgb(220,220,02))">
+                 <h2>NON PREMERE IL BOTTONE</h2>
+                 <p>Ti ho detto di non schiacciarlo</p>
+             </div>
+             <script src="es2.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script>
+                console.log($("div")[0])
+                $("#h1bella").html("ciaone");
+                console.log($("#h1bella")[0].innerHTML);
+                var ciao = $("<h3>Hola</h3>");
+                $("body").append(ciao);
+                $("#span1").html("CUCU");
+                $("#div1").html("<h1>TI AVEVO DETTO DI NON CLICCARE MALEDETTO</h1>");
+                $("#div1").attr("style", "background-color: #df298d ");
+                
+            </script>
+    </body>  
 </html>
